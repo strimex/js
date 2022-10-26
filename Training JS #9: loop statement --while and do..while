@@ -1,0 +1,16 @@
+function padIt(str,n){
+    let i = 0;
+  let result = [str];
+
+  while(n > i) {
+    if (i % 2 === 0) {
+       result.unshift('*');
+       i++
+    } else {
+       result.push('*');
+       i++
+    }
+  }
+
+  return result.join('');
+}
